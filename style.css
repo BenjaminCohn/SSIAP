@@ -17,7 +17,6 @@ body{
     overflow: hidden;
 }
 
-
 .item{
     position: absolute;
     width: 200px;
@@ -77,7 +76,7 @@ h1{
     font-size: 20px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     .slider {
         height: 320px !important;
     }
@@ -86,8 +85,16 @@ h1{
     }
     #next, #prev {
         color: black;
-        font-size: 18px !important;
+        font-size: 58px !important;
         top: 50% !important;
         transform: translateY(-50%);
     }
+    #next {
+        right: 20px !important; /* Make it fit better in smaller screens */
+    }
+    
+    #prev {
+        left: 20px !important; /* Adjust as needed for positioning */
+    }
+    
 }
