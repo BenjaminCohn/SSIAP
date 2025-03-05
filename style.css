@@ -50,7 +50,7 @@ th {
 
 #next, #prev{
     position: absolute;
-    top: 40%;
+    top: 50%;
     color: #fff;
     background-color: transparent;
     border: none;
@@ -76,102 +76,18 @@ h1{
     font-family: roboto;
     font-size: 20px;
 }
-/* body {
-    background-image: 
-        linear-gradient(
-            to top right, #8B5CF6, #4866ec, #660872
-        );
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: roboto;
-    padding: 10px;
-}
 
-.slider {
-    position: relative;
-    width: 90%;
-    max-width: 300px;
-    height: 370px;
-    overflow: hidden;
-}
-
-.item {
-    position: absolute;
-    width: 90%;
-    max-width: 220px;
-    height: 320px;
-    text-align: justify;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    transition: 0.5s;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-    overflow: auto;
-}
-
-table {
-    width: 50%;
-    max-width: 160px;
-    margin: 10px auto;
-    border-collapse: collapse;
-    display: flex;
-    flex-wrap: nowrap;
-}
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-    font-size: 10px;
-}
-th {
-    background-color: #f4f4f4;
-}
-
-#next, #prev {
-    position: absolute;
-    top: 50%;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    font-family: monospace;
-    font-weight: bold;
-    left: 10px;
-}
-#next {
-    left: unset;
-    right: 10px;
-}
-
-h1 {
-    width: 100%;
-    color: white;
-    border-radius: 30px;
-    background-image:
-    linear-gradient(to bottom left,#c97e0d, #dd0808);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: roboto;
-    font-size: 16px;
-    padding: 10px;
-} */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .slider {
-        height: 340px;
+        height: 320px !important;
     }
     .item {
-        height: 300px;
+        height: 280px !important;
     }
     #next, #prev {
         color: black;
-        font-size: 22px;
-        top: 48%;
+        font-size: 18px !important;
+        top: 50% !important;
+        transform: translateY(-50%);
     }
 }
