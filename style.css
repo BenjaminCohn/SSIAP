@@ -29,7 +29,21 @@ body{
     transition: 0,50s;
     left: calc(50% - 110px);
     top: 0;
-    
+    overflow: auto;
+}
+
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
 }
 
 #next, #prev{
@@ -49,8 +63,9 @@ body{
 }
 
 h1{
+    width: 100%;
     color: White;
-    border-radius: 50px;
+    border-radius: 60px;
     background-image:
     linear-gradient(to bottom left,#c97e0d, #dd0808);
     display: flex;
