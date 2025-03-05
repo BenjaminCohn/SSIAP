@@ -79,12 +79,14 @@ h1{
 @media screen and (max-width: 1000px) {
     .slider {
         height: 320px !important;
+        align-items: center;
     }
     .item {
         height: 280px !important;
+        align-items: center;
     }
     #next, #prev {
-        color: black;
+       
         font-size: 58px !important;
         top: 50% !important;
         transform: translateY(-50%);
