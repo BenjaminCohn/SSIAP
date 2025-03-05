@@ -34,3 +34,40 @@ let items = document.querySelectorAll('.slider .item');
         active = active - 1 >= 0 ? active - 1 : active;
         loadShow();
     }
+    document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    const items = document.querySelectorAll(".item");
+    const next = document.getElementById("next");
+    const prev = document.getElementById("prev");
+    
+    let currentIndex = 0;
+
+    function updateSliderPosition() {
+        const offset = -currentIndex * 100; // Déplacement en %
+        items.forEach((item) => {
+            item.style.transform = `translateX(${offset}%)`;
+        });
+    }
+
+    next.addEventListener("click", function () {
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Retour au début
+        }
+        updateSliderPosition();
+    });
+
+    prev.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = items.length - 1; // Aller à la fin
+        }
+        updateSliderPosition();
+    });
+
+    updateSliderPosition();
+});
+
+
